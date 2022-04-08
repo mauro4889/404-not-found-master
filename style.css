@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Space+Mono:wght@400;700&display=swap');
+
 * {
-    font-family: 'Poppins';
+    font-family: 'Karla';
 }
 
 body {
@@ -8,16 +11,47 @@ body {
 }
 
 .container {
-    width: 100vw;
+    width: 90vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
+    margin: auto;
+}
+
+h2{
+    font-size: 90%;
+    margin-bottom: 10%;
 }
 
 .scarecrow-img {
-    background: url(./img/Scarecrow.png);
-    background-size: cover;
+    background: url(./img/Scarecrow.png) no-repeat;
+    background-size: contain;
     margin: auto;
+    margin-left: 10%;
     width: 90%;
-    height: 40%;
+    height: 100%;
+}
+h1{
+    font-family: 'Space Mono';
+    width: 100%;
+    margin: auto;
+    font-size: 210%;
+    font-weight: 700;
+    text-align: center;
+    word-spacing: 30px;
+}
+p{
+    font-family: 'Space Mono';
+    font-weight: 400;
+    width: 85%;
+    margin: 5% auto;
+}
+input{
+    background-color: #333333;
+    width: 50%;
+    height: 20%;
+    margin-left: 8%;
+    font-family: 'Space Mono';
+    color: white;
+    font-weight: 700;
 }
