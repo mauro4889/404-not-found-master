@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Space+Mono:wght@400;700&display=swap');
-
 * {
     font-family: 'Karla';
 }
@@ -18,7 +17,7 @@ body {
     margin: auto;
 }
 
-h2{
+h2 {
     font-size: 90%;
     margin-bottom: 10%;
 }
@@ -27,11 +26,17 @@ h2{
     background: url(./img/Scarecrow.png) no-repeat;
     background-size: contain;
     margin: auto;
-    margin-left: 10%;
+    margin-left: 6%;
     width: 90%;
-    height: 100%;
+    height: 40%;
 }
-h1{
+
+.text-container {
+    width: 100%;
+    height: 50%;
+}
+
+h1 {
     font-family: 'Space Mono';
     width: 100%;
     margin: auto;
@@ -40,18 +45,72 @@ h1{
     text-align: center;
     word-spacing: 30px;
 }
-p{
+
+p {
     font-family: 'Space Mono';
     font-weight: 400;
     width: 85%;
     margin: 5% auto;
 }
-input{
-    background-color: #333333;
-    width: 50%;
-    height: 20%;
+
+input {
+    background: #333333;
+    width: 60%;
+    height: 15%;
     margin-left: 8%;
     font-family: 'Space Mono';
     color: white;
     font-weight: 700;
+    border-style: none;
+    cursor: pointer;
+    margin-top: 10%;
+    transition: all 0.5s linear;
+}
+
+input:hover {
+    background: #5f5f5f;
+}
+
+
+/* MEDIA QUERY */
+
+@media (min-width: 1023px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    h2 {
+        width: 100%;
+        font-size: 110%;
+        margin-bottom: 0;
+    }
+    .scarecrow-img {
+        width: 50%;
+        margin: 0;
+    }
+    .text-container {
+        width: 50%;
+    }
+    h1,
+    p {
+        text-align: left;
+    }
+    p {
+        width: 60%;
+        margin-left: 0;
+    }
+    input {
+        width: 40%;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 1439px) {
+    .scarecrow-img {
+        width: 40%;
+        margin-left: 10%;
+    }
+    input {
+        margin-top: 5%;
+    }
 }
