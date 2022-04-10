@@ -29,6 +29,9 @@ h2 {
     margin-left: 6%;
     width: 90%;
     height: 40%;
+    animation-name: load_img;
+    animation-duration: 2s;
+    position: relative;
 }
 
 .text-container {
@@ -46,6 +49,14 @@ h1 {
     word-spacing: 30px;
 }
 
+h1,
+p,
+input {
+    animation-name: load;
+    animation-duration: 3s;
+    position: relative;
+}
+
 p {
     font-family: 'Space Mono';
     font-weight: 400;
@@ -53,7 +64,7 @@ p {
     margin: 5% auto;
 }
 
-input {
+.btn_homepage {
     background: #333333;
     width: 60%;
     height: 15%;
@@ -67,8 +78,26 @@ input {
     transition: all 0.5s linear;
 }
 
-input:hover {
+.btn_homepage:hover {
     background: #5f5f5f;
+}
+
+@keyframes load {
+    0% {
+        top: 50%;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes load_img {
+    0% {
+        right: 100%;
+    }
+    100% {
+        right: 0;
+    }
 }
 
 
@@ -94,14 +123,25 @@ input:hover {
     h1,
     p {
         text-align: left;
+        position: relative;
+        animation-name: load_txt;
+        animation-duration: 2s;
     }
     p {
         width: 60%;
         margin-left: 0;
     }
-    input {
+    .btn_homepage {
         width: 40%;
         margin-left: 0;
+    }
+    @keyframes load_txt {
+        0% {
+            left: 50%;
+        }
+        100% {
+            left: 0;
+        }
     }
 }
 
@@ -110,7 +150,7 @@ input:hover {
         width: 40%;
         margin-left: 10%;
     }
-    input {
+    .btn_homepage {
         margin-top: 5%;
     }
 }
